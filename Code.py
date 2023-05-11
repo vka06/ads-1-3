@@ -127,6 +127,7 @@ plt.scatter(pivot_data['Methane emissions (kt of CO2 equivalent)'],
 
 
 
+
 # Add axis labels and a title to the plot
 plt.xlabel('Methane emissions (kt of CO2 equivalent)')
 plt.ylabel('CO2 emissions (metric tons per capita)')
@@ -203,7 +204,7 @@ def fit_model(x_vals, y_vals, linear_func, sigma = [1.0, 1.0]):
     y_pred = linear_func(x_pred, *popt)
     lower, upper = err_ranges(x_pred, linear_func, popt, sigma)
     
-    print(f"Predictions are...")
+    print(f"Predictions")
     print(y_pred)
     
     # plot the model function and the confidence intervals for the predictions
